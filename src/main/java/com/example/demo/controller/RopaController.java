@@ -48,7 +48,8 @@ public class RopaController {
     public String inventario(Model model) {
         List<Prenda> lista = repository.findAll();
         model.addAttribute("prendas", lista);
-        model.addAttribute("prenda", new Prenda()); // Objeto vacío para el formulario
+        model.addAttribute("prenda", new Prenda());
+        // Objeto vacío para el formulario
         cargarEstadisticas(model, lista);
         return "inventario"; // Carga inventario.html
     }

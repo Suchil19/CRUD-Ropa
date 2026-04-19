@@ -15,7 +15,8 @@ public class Prenda {
     private String nombre;
     private String categoria;
     private Double precio;
-    private Integer cantidad; // <-- Nuevo campo para unidades
+    // campo para unidades
+    private Integer cantidad; 
 
     public Prenda() {}
 
